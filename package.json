@@ -1,7 +1,7 @@
 {
   "name": "@maxscharwath/gittools",
   "shortname": "gittools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -39,6 +39,7 @@
     "@types/gradient-string": "^1.1.2",
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.14.0",
+    "@types/update-notifier": "^6.0.2",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5"
   },
