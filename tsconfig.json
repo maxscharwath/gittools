@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "nodeNext",
+    "target": "esNext",
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

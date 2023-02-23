@@ -1,0 +1,58 @@
+{
+  "name": "@maxscharwath/gittools",
+  "shortname": "gittools",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "GitTools is a CLI tool to help you copy your git repositories to a new location and archive it if you want to.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup-node src/index.ts",
+    "start": "tsup-node src/index.ts --watch",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "git",
+    "copy",
+    "cli",
+    "tool",
+    "gitcloner",
+    "git-tools",
+    "git_tools"
+  ],
+  "author": "Maxime Scharwath",
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/maxscharwath/gittools.git"
+  },
+  "bin": {
+    "gittools": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@types/gradient-string": "^1.1.2",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.14.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "boxen": "^7.0.1",
+    "commander": "^10.0.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^8",
+    "inquirer-press-to-continue": "^1.1.4",
+    "ora": "^6.1.2",
+    "simple-git": "^3.16.1",
+    "update-notifier": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
