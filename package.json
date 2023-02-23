@@ -1,13 +1,13 @@
 {
   "name": "@maxscharwath/gittools",
   "shortname": "gittools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
   "description": "GitTools is a CLI tool to help you copy your git repositories to a new location and archive it if you want to.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsup-node src/index.ts",
@@ -29,7 +29,7 @@
     "url": "https://github.com/maxscharwath/gittools.git"
   },
   "bin": {
-    "gittools": "dist/index.js"
+    "gittools": "./dist/index.js"
   },
   "files": [
     "dist"

@@ -11,6 +11,15 @@ To have access to the full functionality of GitTools, you must have the followin
 
 Github CLI is used to create a new repository, and archiving repositories.
 
+### Installing GitTools
+```bash
+npm install -g @maxscharwath/gittools
+# or
+yarn global add @maxscharwath/gittools
+# or
+pnpm add -g @maxscharwath/gittools
+```
+
 ## Usage
 
 ### Copying a repository
@@ -21,7 +30,7 @@ gittools copy <source> <destination> [options]
 - `destination` is the destination repository to copy to
 - `options` are the options to use
     - `-c, --create` creates the destination repository if it does not exist (requires Github CLI)
-    - `-a, --archive` archives the source repository after copying (requires Github CLI)
+    - `-a, --archive` archives the destination repository after copying (requires Github CLI)
 
 ### Archiving repositories (requires Github CLI)
 ```bash
